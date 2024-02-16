@@ -53,14 +53,14 @@
       "sky.rethinkdns.com": [
         "188.114.97.3",
         "188.114.96.3",
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "104.18.202.232",
         "104.18.203.232",
-        "104.21.83.62",
-        "172.67.214.246",
-        "2606:4700:3030::6815:533e",
-        "2606:4700:3030::ac43:d6f6"
+        "188.114.96.6",
+        "188.114.97.6",
+        "2a06:98c1:3121::6",
+        "2a06:98c1:3120::6"
       ]
     },
     "independent_cache": true
@@ -103,12 +103,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "CONFIG 1 | 1",
-        "Baraye azadi | 2",
-        "marg bar setamgar 1 | 3",
-        "marg bar setamgar 2 | 4",
-        "UNLIMITED-ALL OPRATOR  FASSSSST 1 | 5",
-        "UNLIMITED-ALL OPRATOR FASSSSST 2 | 6"
+        "Fragment | 1",
+        "Fragment | 2",
+        "Fragment | 3",
+        "Fragment | 4",
+        "Fragment | 5",
+        "Fragment | 6"
       ],
       "default": "auto"
     },
@@ -116,19 +116,19 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "CONFIG 1 | 1",
-        "Baraye azadi | 2",
-        "marg bar setamgar 1 | 3",
-        "marg bar setamgar 2 | 4",
-        "UNLIMITED-ALL OPRATOR  FASSSSST 1 | 5",
-        "UNLIMITED-ALL OPRATOR FASSSSST 2 | 6"
+        "Fragment | 1",
+        "Fragment | 2",
+        "Fragment | 3",
+        "Fragment | 4",
+        "Fragment | 5",
+        "Fragment | 6"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
     },
     {
       "type": "vless",
-      "tag": "CONFIG 1 | 1",
+      "tag": "Fragment | 1",
       "tls_fragment": {
         "enabled": true,
         "size": "5-10",
@@ -165,7 +165,7 @@
     },
     {
       "type": "vless",
-      "tag": "Baraye azadi | 2",
+      "tag": "Fragment | 2",
       "tls_fragment": {
         "enabled": true,
         "size": "5-10",
@@ -202,7 +202,7 @@
     },
     {
       "type": "vless",
-      "tag": "marg bar setamgar 1 | 3",
+      "tag": "Fragment | 3",
       "tls_fragment": {
         "enabled": true,
         "size": "5-10",
@@ -239,7 +239,7 @@
     },
     {
       "type": "vless",
-      "tag": "marg bar setamgar 2 | 4",
+      "tag": "Fragment | 4",
       "tls_fragment": {
         "enabled": true,
         "size": "5-10",
@@ -276,7 +276,7 @@
     },
     {
       "type": "vless",
-      "tag": "UNLIMITED-ALL OPRATOR  FASSSSST 1 | 5",
+      "tag": "Fragment | 5",
       "tls_fragment": {
         "enabled": true,
         "size": "5-10",
@@ -313,7 +313,7 @@
     },
     {
       "type": "vless",
-      "tag": "UNLIMITED-ALL OPRATOR FASSSSST 2 | 6",
+      "tag": "Fragment | 6",
       "tls_fragment": {
         "enabled": true,
         "size": "5-10",
@@ -418,6 +418,3 @@
     }
   }
 }
-
-This paste expires in <1 day. Public IP access. Share whatever you see with others in seconds with Context.Terms of ServiceReport this
-1
